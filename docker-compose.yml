@@ -1,0 +1,33 @@
+version: '2'
+services:
+  ctf-web:
+    build: .
+    ports:
+      - "8001:80"
+    volumes:
+      - ./src:/var/www/html:ro
+    depends_on:
+      - ctf-db
+    restart: always
+
+  ctf-ftp:
+    image: docker.io/panubo/vsftpd
+    ports:
+      - "20-21:20-21"
+      - "4559-4654:4559-4654"
+    restart: always
+    environment:
+      - "FTP_USER=ftp"
+      - "FTP_PASSWORD=ftp"
+      - "FTP_CHOWN_ROOT=ftp"
+    volumes:
+      - "./CTF-ftp:/srv"
+    
+  ctf-db:
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: "true"     
+      MYSQL_DATABASE: "register"
+    volumes:
+      - ./ctf_db_scheme:/docker-entrypoint-initdb.d
