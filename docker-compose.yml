@@ -3,9 +3,9 @@ services:
   ctf-web:
     build: .
     ports:
-      - "8001:80"
+      - "8081:80"
     volumes:
-      - ./src:/var/www/html:ro
+      - ./ctf-src:/var/www/html:ro
     depends_on:
       - ctf-db
     restart: always
@@ -21,7 +21,7 @@ services:
       - "FTP_PASSWORD=ftp"
       - "FTP_CHOWN_ROOT=ftp"
     volumes:
-      - "./CTF-ftp:/srv"
+      - "./ctf-ftp:/srv"
     
   ctf-db:
     image: mysql
