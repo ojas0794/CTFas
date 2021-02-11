@@ -2,7 +2,7 @@
 //start session
 session_start();
 
-require('config.php')
+require('config.php');
 
 if(isset($_POST['forgotSubmit'])){
     //check whether email is empty
