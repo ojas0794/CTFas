@@ -1,6 +1,6 @@
 <?php
 
-$conn = mysqli_connect("ctf-db","root","root","login");
+$conn = mysqli_connect("ctf-db","root","","login");
 
 if (mysqli_connect_errno())
   {
