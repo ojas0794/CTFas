@@ -8,7 +8,7 @@ if(isset($_SESSION['username']))
     header("location: welcome.php");
     exit;
 }
-require('config.php')
+require('config.php');
 
 $username = $password = "";
 $err = "";
