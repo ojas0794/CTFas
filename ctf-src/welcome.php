@@ -64,8 +64,7 @@ else
 { ?>
 
 <h3><?php echo "Welcome ". $_SESSION['username']?>! Next Clue </h3>
-	<p> 1c59039c73eb8fbcf567a97bfbae6b58 </p>
-	<p> 707541e263f0c1c4851076fe005471dbb1c2a7c8 </p>
+	<a href="Flag.zip">Download zip file</a>
 	<?php } ?>
 <hr>
 

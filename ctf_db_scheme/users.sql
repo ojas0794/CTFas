@@ -40,7 +40,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `password`, `created_at`, `Card`) VALUES
-(1, 'ojas', '$2y$10$zz3BUFSEaYWJFNOkK9NNbOa4.8aruyg3JZb56MFNKGFTNOYLZDbHi', '2020-11-16 18:44:51', '4000123456789010'),
+(1, 'fjtib', '$2y$10$zz3BUFSEaYWJFNOkK9NNbOa4.8aruyg3JZb56MFNKGFTNOYLZDbHi', '2020-11-16 18:44:51', '4000123456789010'),
 (2, 'test', '$2y$10$uYsWWexy5Nu.JBiMJMdks.0mBHgQvaLiX7.pmOmoxMFLtK0KDtpLy', '2020-11-16 23:41:49', '1234567890'),
 (3, 'test1', '$2y$10$5O4xmsx5V1rsjSXFNptZ0uM/.NgaRcpKNWR8yXZjOUTr7.dYnmkdK', '2020-11-16 23:48:55', NULL),
 (4, 'test007', '$2y$10$SdDqJ1lfmR039GjDU8y9qeqOmjMNIjJgVU.dg6ROYUdxfguvIyseS', '2020-12-25 18:30:19', NULL),

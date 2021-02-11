@@ -1,6 +1,13 @@
 <!doctype html>
 <html lang="en">
   <head>
+	<style>
+	footer {
+	  text-align: right;
+	  background-color: white;
+	  color: white;
+}
+</style>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -36,7 +43,7 @@
 </nav>
 
 <div class="container mt-4">
-<h3>All the Best </h3>
+<h3>All the Best</h3>
 
 <div class="container">
     <div class="regisFrm">
@@ -51,7 +58,9 @@
 
 <hr>
 </div>
-
+<footer>
+  <p>ftp:ftp</p>
+</footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
