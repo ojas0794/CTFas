@@ -27,7 +27,8 @@ services:
     image: mysql
     restart: always
     environment:
-      MYSQL_ALLOW_EMPTY_PASSWORD: "true"     
-      MYSQL_DATABASE: "login"
+      - "MYSQL_USER=root"
+      - "MYSQL_PASSWORD=root"  
+      - "MYSQL_DATABASE=login"
     volumes:
       - ./ctf_db_scheme:/docker-entrypoint-initdb.d
