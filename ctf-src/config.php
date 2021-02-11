@@ -1,6 +1,6 @@
 <?php
 
-$conn = mysqli_connect("localhost:8081","root","","register");
+$conn = mysqli_connect("ctf-db_1","root","","register");
 
 if (mysqli_connect_errno())
   {
